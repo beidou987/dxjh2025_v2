@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05级高药2班·廿载重逢</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap">
+</head>
+<body>
+    <div class="container">
+        <!-- 页面装饰元素 -->
+        <div class="corner-decoration top-left"></div>
+        <div class="corner-decoration top-right"></div>
+        <div class="corner-decoration bottom-left"></div>
+        <div class="corner-decoration bottom-right"></div>
+        
+        <!-- 校徽 Logo -->
+        <div class="logo">
+            <img src="images/seal.png" alt="校徽">
+        </div>
+        
+        <!-- 顶部区域 -->
+        <header>
+            <div class="title-area">
+                <h1 class="main-title">05级高药2班·廿载重逢</h1>
+                <h2 class="sub-title">2005-2025 青春不散场</h2>
+            </div>
+            
+            <!-- Banner轮播图 - 特色图文展示 -->
+            <div class="banner-container">
+                <div class="banner-wrapper">
+                    <div class="banner active">
+                        <img src="images/banner01.jpg" alt="校园回忆">
+                    </div>
+                    <div class="banner">
+                        <img src="images/banner02.png" alt="校园回忆">
+                    </div>
+                    <div class="banner">
+                        <img src="images/banner03.jpg" alt="校园回忆">
+                    </div>
+                    <div class="banner">
+                        <img src="images/banner04.png" alt="校园回忆">
+                    </div>
+                </div>
+                <div class="banner-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                </div>
+                <div class="banner-overlay"></div>
+            </div>
+        </header>
+        
+        <!-- 主文案区 -->
+        <main>
+            <div class="invitation-card">
+                <div class="card-decoration left"></div>
+                <div class="card-decoration right"></div>
+                
+                <h2 class="card-title">同学会邀请函</h2>
+                <div class="greeting">
+                    <p>亲爱的05级高药2班同学们：</p>
+                    <p>时光荏苒，岁月如歌。转眼间，我们已从风华正茂的少年步入成熟稳重的中年，但那些在莱阳校园的青春岁月，依然清晰如昨。2005年金秋，我们怀揣梦想相聚于莱阳校园；2025年盛夏，让我们带着故事再次重逢！</p>
+                </div>
+                
+                <div class="event-details">
+                    <div class="detail-item">
+                        <h3>活动地点</h3>
+                        <p>莱阳校区 → 牟平校区</p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h3>详细日程安排</h3>
+                        <div class="schedule">
+                            <h4>6月14日（周六）</h4>
+                            <ul>
+                                <li>13:00前：莱阳校区正门集合（签到 & 领取纪念品）</li>
+                                <li>14:00 - 15:30：重游校园（教室、宿舍、操场）</li>
+                                <li>16:00：统一乘车前往牟平</li>
+                                <li>17:30：牟平聚餐（畅聊廿载人生）</li>
+                            </ul>
+                            
+                            <h4>6月15日（周日）</h4>
+                            <ul>
+                                <li>09:00：参观牟平新校区（感受母校发展）</li>
+                                <li>10:00：参观结束，自由返程</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h3>费用说明</h3>
+                        <ul>
+                            <li>活动费用：600元/人 <span class="fee-detail">（多退少补，含餐饮、纪念品、班服，不含住宿）</span></li>
+                            <li>住宿自理，将由梁丽协助统一预订</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h3>温馨提示</h3>
+                        <ul>
+                            <li>请于 5月15日前 微信群内填写问卷调研确认是否参与</li>
+                            <li>欢迎提供当年校园生活照（用于制作纪念视频）</li>
+                            <li>请带上你的故事，分享这20年的精彩人生</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h3>筹备组联系方式</h3>
+                        <ul>
+                            <li>总协调：张伟</li>
+                            <li>财务组：梁丽</li>
+                            <li>后勤组：姜莉莉、戴强强、王凤双、娄华伟</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="divider">
+                    <span class="divider-icon">❦</span>
+                </div>
+            </div>
+            
+            <!-- 音乐可视化 -->
+            <div class="music-visualizer">
+                <div class="music-control">
+                    <button id="musicToggle" class="music-btn">
+                        <span class="music-icon playing">🎵</span>
+                    </button>
+                </div>
+                <div class="visualizer-container">
+                    <!-- 柱状条将由JavaScript动态创建 -->
+                </div>
+            </div>
+        </main>
+        
+        <!-- 底部文案 -->
+        <footer>
+            <div class="countdown">
+                <p>距重逢还有 <span id="daysLeft">36</span> 天</p>
+            </div>
+            <div class="footer-message">
+                <p><i>青春不老，我们不散！</i></p>
+                <p><i>6月14日，回到梦开始的地方，重温同窗情，再续青春缘！</i></p>
+            </div>
+            <div class="footer-decoration"></div>
+        </footer>
+    </div>
+    
+    <!-- 音频元素 -->
+    <audio id="bgMusic" preload="auto" autoplay>
+        <source src="music/把酒话前尘.MP3" type="audio/mpeg">
+        <source src="music/把酒话前尘.mp3" type="audio/mpeg">
+        您的浏览器不支持音频播放
+    </audio>
+    
+    <audio id="bgMusic2" preload="auto">
+        <source src="music/还有多少个十年.MP3" type="audio/mpeg">
+        <source src="music/还有多少个十年.mp3" type="audio/mpeg">
+        您的浏览器不支持音频播放
+    </audio>
+    
+    <script>
+        // 强制尝试播放音乐的内联脚本
+        (function() {
+            // 在页面加载完成后立即执行
+            function initAudio() {
+                var music = document.getElementById('bgMusic');
+                
+                // 确保音频已加载
+                music.load();
+                music.volume = 0.6;
+                
+                // 多次尝试播放
+                function attemptPlay() {
+                    var promise = music.play();
+                    if (promise) {
+                        promise.then(function() {
+                            console.log('内联脚本：音乐播放成功');
+                            // 更新播放图标
+                            var icon = document.querySelector('.music-icon');
+                            if (icon) {
+                                icon.classList.remove('paused');
+                                icon.classList.add('playing');
+                                icon.textContent = '🎵';
+                            }
+                        }).catch(function(e) {
+                            console.log('内联脚本：播放失败', e);
+                            // 500ms后再次尝试
+                            setTimeout(attemptPlay, 500);
+                        });
+                    }
+                }
+                
+                // 立即尝试播放
+                attemptPlay();
+                
+                // 用户交互时确保播放
+                function playOnInteraction() {
+                    attemptPlay();
+                    document.removeEventListener('click', playOnInteraction);
+                    document.removeEventListener('touchstart', playOnInteraction);
+                    document.removeEventListener('keydown', playOnInteraction);
+                }
+                
+                document.addEventListener('click', playOnInteraction);
+                document.addEventListener('touchstart', playOnInteraction);
+                document.addEventListener('keydown', playOnInteraction);
+                
+                // 在页面可见时也尝试播放
+                document.addEventListener('visibilitychange', function() {
+                    if (document.visibilityState === 'visible' && music.paused) {
+                        attemptPlay();
+                    }
+                });
+            }
+            
+            // 页面加载后执行
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initAudio);
+            } else {
+                initAudio();
+            }
+            
+            // 确保页面完全加载后也执行
+            window.addEventListener('load', function() {
+                setTimeout(initAudio, 1000);
+            });
+        })();
+    </script>
+    
+    <script src="js/script.js"></script>
+</body>
+</html> 
