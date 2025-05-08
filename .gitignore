@@ -1,0 +1,26 @@
+# macOS specific
+__MACOSX/
+.DS_Store
+
+# Archives
+*.zip
+
+# Node.js (if not strictly a Node.js project, otherwise adjust)
+package-lock.json
+node_modules/
+
+# Placeholder files
+**/placeholder.txt
+
+# Build artifacts or temp files (if any)
+# e.g., dist/
+# e.g., temp/
+
+# IDE and editor specific
+.vscode/
+.idea/
+*.swp
+*~
+
+# Shell script for packaging (if not intended to be versioned with the source)
+# package.sh
