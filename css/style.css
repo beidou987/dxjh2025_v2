@@ -6,6 +6,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
 
+@font-face {
+    font-family: 'HengshanBrush';
+    src: url('https://cdn.jsdelivr.net/gh/PalpitateWang/HengshanFont/HengshanBrush.ttf') format('truetype');
+    font-display: swap;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -157,8 +163,8 @@ header::after {
 }
 
 .main-title {
-    font-family: 'Ma Shan Zheng', '宋体', SimSun, serif;
-    font-size: 2.3rem;
+    font-family: 'HengshanBrush', 'Ma Shan Zheng', 'ZCOOL KuaiLe', '宋体', SimSun, serif;
+    font-size: 2.8rem;
     color: var(--dark-gold);
     margin-bottom: 15px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
@@ -402,7 +408,7 @@ main {
 .card-title {
     text-align: center;
     color: var(--dark-gold);
-    font-family: 'Ma Shan Zheng', '宋体', SimSun, serif;
+    font-family: 'ZCOOL KuaiLe', 'Ma Shan Zheng', '宋体', SimSun, serif;
     font-size: 2rem;
     margin-bottom: 30px;
     padding-bottom: 20px;
@@ -907,4 +913,4 @@ footer::before {
     .card-decoration {
         display: none;
     }
-} 
+}
