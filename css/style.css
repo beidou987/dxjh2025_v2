@@ -163,8 +163,8 @@ header::after {
 }
 
 .main-title {
-    font-family: 'HengshanBrush', 'Ma Shan Zheng', 'ZCOOL KuaiLe', '宋体', SimSun, serif;
-    font-size: 2.8rem;
+    font-family: 'Ma Shan Zheng', 'HengshanBrush', 'ZCOOL KuaiLe', '宋体', SimSun, serif;
+    font-size: 3.5rem; /* 调大字号 */
     color: var(--dark-gold);
     margin-bottom: 15px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
@@ -777,14 +777,17 @@ footer::before {
     
     .title-area {
         margin-left: 50px;
+        padding-bottom: 10px; /* 调整标题区域下方间距 */
     }
     
     .main-title {
         font-size: 1.8rem;
+        margin-bottom: 8px; /* 调整主标题下方间距 */
     }
     
     .sub-title {
         font-size: 1.1rem;
+        margin-top: 3px; /* 调整副标题上方间距 */
     }
     
     .card-title {
@@ -855,14 +858,17 @@ footer::before {
     
     .title-area {
         margin-left: 40px;
+        padding-bottom: 5px; /* 调整标题区域下方间距 */
     }
     
     .main-title {
         font-size: 1.5rem;
+        margin-bottom: 5px; /* 调整主标题下方间距 */
     }
     
     .sub-title {
         font-size: 0.95rem;
+        margin-top: 2px; /* 调整副标题上方间距 */
     }
     
     .card-title {
